@@ -1,0 +1,132 @@
+
+
+body { font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size:9pt; }
+
+
+#divWrapper{
+	.ui-widget { 
+		font-size: 9pt; 
+	}
+
+	.label {
+		font-weight:bold; 
+		width: 50px; 
+		float:left; 
+		text-align:right; 
+		vertical-align:middle; 
+		line-height: 2.0; 
+		padding-right:10px;
+	}
+
+	width: 500px;
+	#divHeader{
+		padding:5px;
+	}
+
+	#divBody{
+		overflow:auto; 
+		padding:10px; 
+		border:solid 2px #C8C8C8;
+
+		#divContainer{
+			float:left; 
+			width: 230px; 
+			max-width:300px; 
+			padding-top:10px;
+
+			.unit{
+				font-weight:bold;
+			}
+		}
+
+		@radioButtonWith: 50px;
+		#divGender .ui-button-text{
+			width:@radioButtonWith;
+		}
+
+		#divAge .ui-button-text{
+			display: inline; line-height: 1.7;
+		}
+
+		#divHeight, #divWeight {
+			.ui-button-text {
+				width:@radioButtonWith; 
+			}
+
+			div{
+				float:left; 
+				width:150px;
+
+				.radioButton{
+					padding-bottom:10px;
+				}
+			}
+
+			button{
+				height:20px; 
+				vertical-align:middle;
+			}
+		}	
+
+		#divActivityLevel{
+			#accordion{
+				width:170px; 
+				float:left;
+			}
+			h3{ 
+				font-size:9pt; 
+				font-weight:normal; 
+				margin:0 0 0 0; 
+			}
+			
+			ul {
+				padding-left:10px; 
+				margin-top:0px;
+			}
+
+		}
+
+		#divCalculate{
+			float:left; 
+			padding-top:10px; 
+			padding-bottom:10px; 
+			padding-left:50px;
+		}
+
+		.calcResult{
+			float:left; 
+			border: solid 2px #C8C8C8; 
+			padding: 5px; 
+			margin-top:10px; 
+			width:150px; 
+			margin-left:50px;
+			
+			.title{font-weight:bold; font-size: 12px;}
+
+			.result{
+				font-weight:bold; 
+				font-size: 35px; 
+				color: #0070A3;
+			}
+
+			.unit{
+				font-size:x-small;
+			}
+
+			ul{ padding-left: 20px;}	
+		} 
+
+		#divErrorMessage{
+			display:none;
+			height:auto;
+		}
+	}
+	ul{ margin:0 0 0 0;}
+	p{ margin-bottom: 1em;}
+	input{ background-color:#D7EBF9 }
+}
+
+input[type="text"]{
+	width:30px; 
+	text-align:center;
+}
